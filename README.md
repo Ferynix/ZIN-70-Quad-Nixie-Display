@@ -4,7 +4,7 @@
 
 This is a four tube display built using Millclock ZIN-70 Nixie Tubes. This can be used to drive a clock, or just as a numeric display.
 
-Please note that if you decide to use this diaply as a clock, it does not include colons.
+Please note that if you decide to use this display as a clock, it does not include a colon.
 
 Current iteration: Version 2
 
