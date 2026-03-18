@@ -6,6 +6,8 @@ This is a four tube display built using Millclock ZIN-70 Nixie Tubes. This can b
 
 Please note that if you decide to use this diaply as a clock, it does not include colons.
 
+Current iteration: Version 2
+
 ### Components and Requirements
 
 Supply:
@@ -43,8 +45,10 @@ Driver:
     - Custom footprint. Please swap for your driver. Only compatible with 23-pin 2.54mm pitch RP2040 tinies.
     - Buy directly from waveshare if you want to avoid incompatibility.
 
-Registers and Chips:
-* 1x Texas Instruments `CD40109BPWRE4` TSSOP-16 4bit 3V to 18V Level Converter
-    - Configured for 3.3V to 12V conversion specifically for ESP32. Adjust Vcc and Vdd as required.
+Registers and Other:
 * 2x Microchip Tech. `HV5122` PQFP-44 32bit HV Registers (220V 100mA Drains)
     - Custom symbol/package configured. 
+* 4x TO-92 NPN Transistor (any with E B C pinout) such as 2N2222
+    - Faster transistors better!
+* 2x >0.5A Through-hole Diode - 1N400X series intended, equivalent works.
+
