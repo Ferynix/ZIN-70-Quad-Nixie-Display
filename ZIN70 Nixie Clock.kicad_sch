@@ -5,6 +5,145 @@
 	(uuid "a8c78934-23a1-4cf6-b942-8d1ef6ada9e8")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Converter_DCDC:OKI-78SR-3.3_1.5-W36-C"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OKI-78SR-3.3_1.5-W36-C"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Converter_DCDC:Converter_DCDC_Murata_OKI-78SR_Vertical"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://power.murata.com/data/power/oki-78sr.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1.5A Step-Down DC/DC-Regulator, 7-36V input, 3.3V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, OKI-78SR_Vertical"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "dc-dc murata Step-Down DC/DC-Regulator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Converter*DCDC*Murata*OKI*78SR*Vertical*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OKI-78SR-3.3_1.5-W36-C_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "OKI-78SR-3.3_1.5-W36-C_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -393,37 +532,34 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Logic_LevelTranslator:CD40109BPW"
+		(symbol "Diode:1N4007"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 16.51 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "CD40109BPW"
-				(at 10.16 16.51 0)
+			(property "Value" "1N4007"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-				(at 21.59 -16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/cd40109b.pdf"
-				(at 0 29.21 0)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 -4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -431,16 +567,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "CMOS Quad Low to High Voltage Level Shifter, Input 3 to 18V, up to 18V output , TSSOP-16"
-				(at 0 31.75 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "voltage level shifter"
+			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -449,7 +576,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm*"
+			(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
 				(at 0 0 0)
 				(effects
 					(font
@@ -458,166 +585,85 @@
 					(hide yes)
 				)
 			)
-			(symbol "CD40109BPW_1_1"
-				(rectangle
-					(start -7.62 15.24)
-					(end 7.62 -15.24)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4007_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(pin input line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin input line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin input line
-					(at -10.16 5.08 0)
+			)
+			(symbol "1N4007_1_1"
+				(pin passive line
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "ENABLE_A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "ENABLE_B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "ENABLE_C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -10.16 0)
-					(length 2.54)
-					(name "ENABLE_D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 17.78 270)
-					(length 2.54)
-					(name "V_{CC}"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -632,126 +678,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -17.78 90)
+				(pin passive line
+					(at 3.81 0 180)
 					(length 2.54)
-					(name "V_{SS}"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 17.78 270)
-					(length 2.54)
-					(name "V_{DD}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 7.62 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "F"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "H"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2087,23 +2024,16 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LM78M05_TO220"
+		(symbol "Transistor_BJT:PN2222A"
 			(pin_names
-				(offset 0.254)
+				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM78M05_TO220"
-				(at 0 3.175 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2111,26 +2041,37 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-				(at 0 5.715 0)
+			(property "Value" "PN2222A"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+				(at 5.08 -1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MC78M00-D.PDF"
-				(at 0 -1.27 0)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-220"
+			(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2139,7 +2080,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 500mA Positive"
+			(property "Sim.Device" "NPN"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2148,7 +2089,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?220*"
+			(property "Sim.Pins" "1=E 2=B 3=C"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2157,42 +2098,102 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM78M05_TO220_0_1"
-				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
+			(property "ki_keywords" "NPN Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?92*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PN2222A_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 			)
-			(symbol "LM78M05_TO220_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+			(symbol "PN2222A_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "GND"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2207,10 +2208,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin passive line
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "VO"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2218,6 +2219,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2456,10 +2475,10 @@
 		)
 	)
 	(junction
-		(at 99.06 125.73)
+		(at 111.76 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "02afd485-74df-45e8-bad1-b9b1f521c73c")
+		(uuid "1d2e6e55-7d2c-4081-a458-443fcf4c8f21")
 	)
 	(junction
 		(at 59.69 15.24)
@@ -2480,10 +2499,10 @@
 		(uuid "384cafd1-ede0-4a46-93a3-b5cc38f71ae9")
 	)
 	(junction
-		(at 69.85 113.03)
+		(at 91.44 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4224a1a7-7e9d-460b-a7ec-088bcc757ebf")
+		(uuid "3f9f762e-3633-44c4-9fb0-54918fb1e976")
 	)
 	(junction
 		(at 139.7 43.18)
@@ -2492,16 +2511,22 @@
 		(uuid "43a6cfae-062b-4019-8398-5869e3e65150")
 	)
 	(junction
-		(at 96.52 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4da3d980-008b-4c00-b389-fd6c5c3bb25e")
-	)
-	(junction
 		(at 78.74 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4e004733-6fd4-40c4-8ed0-e859a0c7b4b3")
+	)
+	(junction
+		(at 82.55 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "500c3432-4bfd-4934-8c47-761a80ba61ee")
+	)
+	(junction
+		(at 111.76 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b8b7351-aab7-4108-8bfc-db24b98db6d6")
 	)
 	(junction
 		(at 41.91 15.24)
@@ -2528,16 +2553,22 @@
 		(uuid "8acce332-0289-43b8-bccf-e30837b6d6e1")
 	)
 	(junction
+		(at 101.6 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9099a3c7-b82f-444e-bf68-ea21beb3cc61")
+	)
+	(junction
 		(at 135.89 15.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9beef74b-e1fa-4be1-a653-6f69be2a725e")
 	)
 	(junction
-		(at 104.14 87.63)
+		(at 82.55 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "adfe9c11-aa20-4353-8030-6c52bb498226")
+		(uuid "a53a7f70-666b-4bed-9e60-c7b5447b5fcc")
 	)
 	(junction
 		(at 55.88 43.18)
@@ -2552,10 +2583,28 @@
 		(uuid "b9d053f7-3434-4c40-b7bf-ae90d916011c")
 	)
 	(junction
-		(at 111.76 83.82)
+		(at 101.6 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b9e8ac28-99c0-4222-8079-33366c412ac2")
+		(uuid "bb8afebe-c9e8-438f-a7a0-ce24e24467db")
+	)
+	(junction
+		(at 82.55 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc1467c3-f54e-4a24-b5c3-d19d92e73a6d")
+	)
+	(junction
+		(at 121.92 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf2f9227-dcfb-417e-9637-c9b66ff7ab6a")
+	)
+	(junction
+		(at 69.85 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf50a6fa-743e-4a85-833a-4eaa53554acd")
 	)
 	(junction
 		(at 135.89 38.1)
@@ -2564,28 +2613,16 @@
 		(uuid "cfe7064c-aca2-4538-b8d4-b1246894c1b4")
 	)
 	(junction
-		(at 93.98 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0685d94-d911-492c-8bb1-1c9f6b1c90b3")
-	)
-	(junction
 		(at 76.2 15.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e36c2d79-0280-4549-868a-c38113e1e9c3")
 	)
 	(junction
-		(at 97.79 88.9)
+		(at 121.92 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f7e9b30c-650c-4d27-a4f4-e0d781f1d626")
-	)
-	(junction
-		(at 73.66 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fcfb8559-491b-48b1-9ec9-079c67029495")
+		(uuid "e72214ff-21e5-4ca6-b420-3c619a9ee92d")
 	)
 	(wire
 		(pts
@@ -2649,17 +2686,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 100.33) (xy 104.14 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a5cf5dc-748f-45ae-bb74-b1f10a63f5cd")
-	)
-	(wire
-		(pts
-			(xy 147.32 87.63) (xy 104.14 87.63)
+			(xy 147.32 87.63) (xy 111.76 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2686,16 +2713,6 @@
 			(type default)
 		)
 		(uuid "0cc8b9c2-d228-4082-94a9-3c94406a283a")
-	)
-	(wire
-		(pts
-			(xy 88.9 129.54) (xy 88.9 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f488895-851e-458a-bd2f-918ae6857e86")
 	)
 	(wire
 		(pts
@@ -2729,16 +2746,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 99.06) (xy 97.79 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11df7eba-98d7-4389-ad48-8050594fb2da")
-	)
-	(wire
-		(pts
 			(xy 78.74 81.28) (xy 78.74 85.09)
 		)
 		(stroke
@@ -2749,6 +2756,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 102.87) (xy 82.55 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1636ce3d-c151-4910-8c36-0e37d34740a2")
+	)
+	(wire
+		(pts
 			(xy 83.82 48.26) (xy 83.82 46.99)
 		)
 		(stroke
@@ -2756,16 +2773,6 @@
 			(type default)
 		)
 		(uuid "1644292f-c662-4fdc-a79a-f95d9f3add9e")
-	)
-	(wire
-		(pts
-			(xy 96.52 125.73) (xy 99.06 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17b9e637-34b3-4436-8cff-a64c1176b2ba")
 	)
 	(wire
 		(pts
@@ -2899,6 +2906,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 100.33) (xy 101.6 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b9d1b4-3413-4f5a-b6be-f1b295109247")
+	)
+	(wire
+		(pts
 			(xy 93.98 64.77) (xy 93.98 40.64)
 		)
 		(stroke
@@ -2919,7 +2936,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 87.63) (xy 71.12 87.63)
+			(xy 71.12 87.63) (xy 111.76 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2936,26 +2953,6 @@
 			(type default)
 		)
 		(uuid "27cd6bbb-0bd9-4bc2-a197-43e80e7fecc7")
-	)
-	(wire
-		(pts
-			(xy 69.85 118.11) (xy 73.66 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29e1fb52-ea11-4273-8d38-d48989a369e5")
-	)
-	(wire
-		(pts
-			(xy 111.76 101.6) (xy 111.76 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2aa968a5-0a9e-40d3-abd5-fbe8ff0d0255")
 	)
 	(wire
 		(pts
@@ -2999,16 +2996,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 129.54) (xy 86.36 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f77d064-a844-4059-b32c-8d0c4bb3a557")
-	)
-	(wire
-		(pts
 			(xy 170.18 40.64) (xy 153.67 40.64)
 		)
 		(stroke
@@ -3016,6 +3003,16 @@
 			(type default)
 		)
 		(uuid "3021b965-dcc1-49e4-a71a-f26db823fa45")
+	)
+	(wire
+		(pts
+			(xy 121.92 105.41) (xy 121.92 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33d46bfb-cf43-47e0-8955-bc09f0d39326")
 	)
 	(wire
 		(pts
@@ -3039,33 +3036,23 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 125.73) (xy 96.52 125.73)
+			(xy 82.55 105.41) (xy 69.85 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "37ed4c1e-3ead-401b-8c98-73bcb15414a8")
+		(uuid "37af390b-3e2d-4130-b5da-bbeb72a381d1")
 	)
 	(wire
 		(pts
-			(xy 83.82 105.41) (xy 83.82 99.06)
+			(xy 90.17 105.41) (xy 121.92 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3830b4a4-7db4-4f80-b091-c5eb8ab20666")
-	)
-	(wire
-		(pts
-			(xy 73.66 128.27) (xy 93.98 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40b75b2c-b9fa-4268-adfd-d0afde2b39ed")
+		(uuid "3f5be01f-ff99-4a8e-964e-0176ec9a7ba3")
 	)
 	(wire
 		(pts
@@ -3089,6 +3076,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 85.09) (xy 69.85 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c38451-578a-4fa1-bd36-2529856c140b")
+	)
+	(wire
+		(pts
 			(xy 30.48 60.96) (xy 90.17 60.96)
 		)
 		(stroke
@@ -3096,16 +3093,6 @@
 			(type default)
 		)
 		(uuid "46e36bd7-b5b9-4001-88f4-773e0b998bbe")
-	)
-	(wire
-		(pts
-			(xy 81.28 129.54) (xy 81.28 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "472f54dc-6ef6-4f66-bf48-206c86092057")
 	)
 	(wire
 		(pts
@@ -3129,7 +3116,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 88.9) (xy 68.58 88.9)
+			(xy 68.58 88.9) (xy 101.6 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3269,6 +3256,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 100.33) (xy 82.55 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62402132-cfae-4524-b9f5-54ec965f2bf7")
+	)
+	(wire
+		(pts
 			(xy 140.97 35.56) (xy 140.97 46.99)
 		)
 		(stroke
@@ -3276,26 +3273,6 @@
 			(type default)
 		)
 		(uuid "6263a456-79e9-4ff5-89b9-f66500336051")
-	)
-	(wire
-		(pts
-			(xy 88.9 101.6) (xy 111.76 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62bee485-cb20-4438-a8af-e0d1cb2ef5ab")
-	)
-	(wire
-		(pts
-			(xy 81.28 105.41) (xy 81.28 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "675c8ffb-c879-4283-bf2b-86f44de5d686")
 	)
 	(wire
 		(pts
@@ -3316,16 +3293,6 @@
 			(type default)
 		)
 		(uuid "6d04105e-9077-4d1f-9aea-17dc70a765a3")
-	)
-	(wire
-		(pts
-			(xy 69.85 113.03) (xy 69.85 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ece1faa-3c11-4dae-8cf2-782214779b23")
 	)
 	(wire
 		(pts
@@ -3399,16 +3366,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 125.73) (xy 101.6 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "781b4037-517c-41ca-9d4f-57484a14a3ac")
-	)
-	(wire
-		(pts
 			(xy 67.31 35.56) (xy 67.31 45.72)
 		)
 		(stroke
@@ -3439,7 +3396,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 88.9) (xy 97.79 88.9)
+			(xy 144.78 88.9) (xy 101.6 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3466,6 +3423,16 @@
 			(type default)
 		)
 		(uuid "7cb3ad8b-48f5-4229-8116-ef6eebaab569")
+	)
+	(wire
+		(pts
+			(xy 91.44 97.79) (xy 91.44 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f7000b6-6ac0-47bb-8d2c-8912aab2b2af")
 	)
 	(wire
 		(pts
@@ -3519,7 +3486,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 83.82) (xy 81.28 83.82)
+			(xy 81.28 83.82) (xy 121.92 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3549,16 +3516,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 105.41) (xy 86.36 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c744d6b-9777-4c43-b536-4c1dad4858c9")
-	)
-	(wire
-		(pts
 			(xy 53.34 35.56) (xy 53.34 48.26)
 		)
 		(stroke
@@ -3576,6 +3533,16 @@
 			(type default)
 		)
 		(uuid "8d824751-5d2b-45fb-bf8d-545ae8d64ba6")
+	)
+	(wire
+		(pts
+			(xy 82.55 97.79) (xy 82.55 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dc05a17-a195-4950-8a8b-384d783c11d4")
 	)
 	(wire
 		(pts
@@ -3629,16 +3596,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 128.27) (xy 93.98 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93445c44-d03c-4503-bd68-b639dc23e598")
-	)
-	(wire
-		(pts
 			(xy 59.69 15.24) (xy 76.2 15.24)
 		)
 		(stroke
@@ -3669,6 +3626,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 102.87) (xy 111.76 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ca4a64-dc1c-4ae4-8a8d-aa422967477d")
+	)
+	(wire
+		(pts
 			(xy 121.92 81.28) (xy 121.92 68.58)
 		)
 		(stroke
@@ -3686,6 +3653,16 @@
 			(type default)
 		)
 		(uuid "a0f522e1-1faf-479b-a084-ad2961bcc381")
+	)
+	(wire
+		(pts
+			(xy 121.92 83.82) (xy 121.92 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a359b9e7-24ab-48cc-addf-7de386d0b3d6")
 	)
 	(wire
 		(pts
@@ -3779,6 +3756,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 100.33) (xy 101.6 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5bc69bf-6087-429d-bf82-e9b173f67d42")
+	)
+	(wire
+		(pts
 			(xy 83.82 46.99) (xy 64.77 46.99)
 		)
 		(stroke
@@ -3809,7 +3796,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 83.82) (xy 111.76 83.82)
+			(xy 157.48 83.82) (xy 121.92 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3859,16 +3846,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 99.06) (xy 97.79 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf5a2679-0064-476e-8a26-8267a7c19628")
-	)
-	(wire
-		(pts
 			(xy 96.52 67.31) (xy 43.18 67.31)
 		)
 		(stroke
@@ -3879,7 +3856,17 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 90.17) (xy 90.17 81.28)
+			(xy 111.76 102.87) (xy 111.76 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2d47008-df38-47ce-b579-edbc88f458d2")
+	)
+	(wire
+		(pts
+			(xy 91.44 97.79) (xy 91.44 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3906,16 +3893,6 @@
 			(type default)
 		)
 		(uuid "c7689e20-0e95-42c4-ab4f-ced4563d8e3a")
-	)
-	(wire
-		(pts
-			(xy 104.14 100.33) (xy 104.14 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8919ac2-6028-4251-a927-552bb05bcac4")
 	)
 	(wire
 		(pts
@@ -3999,16 +3976,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 118.11) (xy 73.66 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf3606c9-9c55-4144-8c22-93f48d62fdd8")
-	)
-	(wire
-		(pts
 			(xy 90.17 60.96) (xy 90.17 44.45)
 		)
 		(stroke
@@ -4019,7 +3986,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 81.28) (xy 83.82 81.28)
+			(xy 91.44 81.28) (xy 83.82 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4066,6 +4033,16 @@
 			(type default)
 		)
 		(uuid "da788cba-80e6-4380-831c-425b043f55fd")
+	)
+	(wire
+		(pts
+			(xy 101.6 88.9) (xy 101.6 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dac2c4f8-ad02-470f-8573-b04b304d8a31")
 	)
 	(wire
 		(pts
@@ -4119,13 +4096,13 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 97.79) (xy 90.17 97.79)
+			(xy 111.76 87.63) (xy 111.76 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e4277f66-6533-4ffc-b1a4-ec54e6847cb6")
+		(uuid "e1d7af09-6f42-4b4d-9131-a0048fe508a4")
 	)
 	(wire
 		(pts
@@ -4159,16 +4136,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 129.54) (xy 83.82 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8c6e932-2319-4b8d-bb44-fca68768af21")
-	)
-	(wire
-		(pts
 			(xy 168.91 63.5) (xy 111.76 63.5)
 		)
 		(stroke
@@ -4189,16 +4156,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 105.41) (xy 88.9 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea4455da-198c-4b56-9fd6-a81e10f1fc23")
-	)
-	(wire
-		(pts
 			(xy 71.12 87.63) (xy 71.12 81.28)
 		)
 		(stroke
@@ -4209,13 +4166,13 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 113.03) (xy 73.66 113.03)
+			(xy 91.44 97.79) (xy 90.17 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ebd54d98-d253-46a6-937a-a26cccbd6c02")
+		(uuid "ec3ae3d8-e716-4d41-b9aa-96f2639e7d01")
 	)
 	(wire
 		(pts
@@ -4316,6 +4273,92 @@
 			(type default)
 		)
 		(uuid "fc4e4687-73ff-4e5f-a746-d73d0374d75e")
+	)
+	(symbol
+		(lib_id "Diode:1N4007")
+		(at 30.48 90.17 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "043a5130-2f00-401b-b74a-64391242a311")
+		(property "Reference" "D1"
+			(at 30.48 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 30.48 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 30.48 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
+			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "73cae965-7d2e-4f47-93de-b786295d9c08")
+		)
+		(pin "1"
+			(uuid "be9625ba-c0a9-4044-a77a-6c373724d3d9")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
@@ -4435,7 +4478,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 83.82 133.35 0)
+		(at 93.98 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4444,7 +4487,7 @@
 		(fields_autoplaced yes)
 		(uuid "109afa2b-9f04-45e9-b05e-6b1016a48971")
 		(property "Reference" "R14"
-			(at 86.36 132.0799 0)
+			(at 96.52 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4453,7 +4496,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 86.36 134.6199 0)
+			(at 96.52 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4505,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 82.042 133.35 90)
+			(at 92.202 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4514,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 133.35 0)
+			(at 93.98 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4523,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 83.82 133.35 0)
+			(at 93.98 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4504,43 +4547,83 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LM78M05_TO220")
-		(at 54.61 129.54 0)
+		(lib_id "power:+12V")
+		(at 26.67 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "132e8e93-9478-43f5-bf33-4df63759466e")
+		(property "Reference" "#PWR013"
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+18V"
+			(at 22.86 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 26.67 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49e565e0-348d-4d02-a1de-ab1d141c61e4")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 91.44 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1c46b7f6-1511-4816-9fde-dcef2a19b184")
-		(property "Reference" "U4"
-			(at 54.61 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM78M05_TO220"
-			(at 54.61 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 54.61 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MC78M00-D.PDF"
-			(at 54.61 130.81 0)
+		(uuid "1b088647-f99d-438e-a417-60b3eaf4b9b8")
+		(property "Reference" "#PWR016"
+			(at 91.44 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4548,8 +4631,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-220"
-			(at 54.61 129.54 0)
+		(property "Value" "GND"
+			(at 91.44 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,19 +4648,31 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "bc044b53-f1ca-4a59-9107-cadae9cd4744")
+		(property "Datasheet" ""
+			(at 91.44 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "1ab90132-21f0-4342-907c-199149de6357")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "b14af9b6-61a6-45a8-bd57-e8ac1f0f8f29")
+			(uuid "7400a857-279e-4530-8631-54b0b8a14c60")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "U4")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4693,15 +4796,15 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 62.23 129.54 270)
+		(at 49.53 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "222ae2b5-6919-4748-9f98-772888f7a29b")
-		(property "Reference" "#PWR012"
-			(at 58.42 129.54 0)
+		(property "Reference" "#PWR011"
+			(at 45.72 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,7 +4813,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 66.04 132.334 0)
+			(at 53.34 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4822,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 129.54 0)
+			(at 49.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4728,7 +4831,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 129.54 0)
+			(at 49.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4737,7 +4840,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 62.23 129.54 0)
+			(at 49.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4751,7 +4854,7 @@
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR012")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5086,6 +5189,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:PN2222A")
+		(at 109.22 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "336ff5d8-e77d-48c3-8472-68d9d920e761")
+		(property "Reference" "Q3"
+			(at 114.3 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "PN2222A"
+			(at 114.3 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 114.3 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=E 2=B 3=C"
+			(at 109.22 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c3c232e3-4f4b-4f8e-89a9-615106c09d22")
+		)
+		(pin "1"
+			(uuid "056e9509-b849-46dd-8a57-848d3b8f6933")
+		)
+		(pin "2"
+			(uuid "2393ab21-ac69-4b87-99da-1cbdf8dec2ac")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "NixSymbols:HV5122")
 		(at 58.42 64.77 90)
 		(mirror x)
@@ -5258,7 +5457,7 @@
 			(uuid "f14c741a-8ab8-455b-937b-c8ded6fa984c")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "U1")
 					(unit 1)
@@ -5328,7 +5527,7 @@
 			(uuid "163a151d-374b-45de-aee3-5ab6b7c58a9d")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "R1")
 					(unit 1)
@@ -5454,7 +5653,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 137.16 0)
+		(at 41.91 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5462,8 +5661,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d4c3a8f-f0b4-490a-97c5-4ba809eb752d")
-		(property "Reference" "#PWR013"
-			(at 54.61 143.51 0)
+		(property "Reference" "#PWR012"
+			(at 41.91 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5472,7 +5671,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 142.24 0)
+			(at 41.91 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5480,7 +5679,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 137.16 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5489,7 +5688,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 137.16 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5498,7 +5697,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 137.16 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5512,7 +5711,7 @@
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR013")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5520,7 +5719,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 81.28 133.35 0)
+		(at 83.82 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5529,7 +5728,7 @@
 		(fields_autoplaced yes)
 		(uuid "4598177a-a459-4968-ab1e-cdfda9fbe549")
 		(property "Reference" "R13"
-			(at 83.82 132.0799 0)
+			(at 86.36 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5538,7 +5737,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 83.82 134.6199 0)
+			(at 86.36 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5547,7 +5746,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 79.502 133.35 90)
+			(at 82.042 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5556,7 +5755,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 133.35 0)
+			(at 83.82 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5565,7 +5764,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 81.28 133.35 0)
+			(at 83.82 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5589,118 +5788,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Logic_LevelTranslator:CD40109BPW")
-		(at 91.44 115.57 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "470039da-4043-4316-949e-2b777fc08f77")
-		(property "Reference" "U3"
-			(at 114.3 110.1246 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CD40109BPW"
-			(at 114.3 112.6646 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 107.95 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/cd40109b.pdf"
-			(at 62.23 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CMOS Quad Low to High Voltage Level Shifter, Input 3 to 18V, up to 18V output , TSSOP-16"
-			(at 59.69 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ff4f1f7b-f0af-4f56-9d25-47596c550aea")
-		)
-		(pin "14"
-			(uuid "576073ad-cb54-440b-83dc-bc963dfe9ee7")
-		)
-		(pin "7"
-			(uuid "48d90fbb-7c4c-4b49-9dec-3f656c59eccf")
-		)
-		(pin "15"
-			(uuid "a842c3d4-0486-42c0-ab2f-375ed857f5c2")
-		)
-		(pin "11"
-			(uuid "bfcb404c-07ff-41cc-9387-9f526c2d84bb")
-		)
-		(pin "13"
-			(uuid "997933f6-b4ff-4c74-90d8-2f742e237458")
-		)
-		(pin "12"
-			(uuid "6d74d00c-24af-4985-bd13-7e9f5be6a363")
-		)
-		(pin "5"
-			(uuid "bd72647f-503a-4f85-aa23-fa6b6e46cab7")
-		)
-		(pin "16"
-			(uuid "42d39609-5be5-4900-bf06-06efb6b8c204")
-		)
-		(pin "4"
-			(uuid "e40be258-a912-405d-ba08-866182b28f66")
-		)
-		(pin "9"
-			(uuid "f1ead518-418f-4749-aed9-41c6e4e2ecd0")
-		)
-		(pin "10"
-			(uuid "feb2a13b-497f-42e4-ae36-ddeee9d6eac8")
-		)
-		(pin "3"
-			(uuid "8b553d35-e422-4b77-be9a-0d0a94a8fe50")
-		)
-		(pin "6"
-			(uuid "691bee36-46f5-45b7-9b6c-81684688c769")
-		)
-		(pin "1"
-			(uuid "ff807261-7c8e-40ae-955e-99bd86e52c84")
-		)
-		(pin "8"
-			(uuid "957ffd2b-26b7-4549-9e5d-476590eed4c8")
-		)
-		(instances
-			(project ""
-				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 90.17 93.98 0)
+		(at 86.36 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5709,25 +5798,23 @@
 		(fields_autoplaced yes)
 		(uuid "528aa15a-9f6f-4798-ba34-8e93c1c471fc")
 		(property "Reference" "R12"
-			(at 92.71 92.7099 0)
+			(at 86.36 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "1K"
-			(at 92.71 95.2499 0)
+			(at 86.36 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 88.392 93.98 90)
+			(at 86.36 99.568 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,7 +5823,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 90.17 93.98 0)
+			(at 86.36 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +5832,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 90.17 93.98 0)
+			(at 86.36 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5769,16 +5856,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 69.85 118.11 90)
+		(lib_id "power:GND")
+		(at 41.91 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5f22e1db-3faf-41f8-b54e-4ba713b780e1")
-		(property "Reference" "#PWR07"
-			(at 73.66 118.11 0)
+		(fields_autoplaced yes)
+		(uuid "5c15995f-ef5e-4c01-bc95-b0ec167d9029")
+		(property "Reference" "#PWR015"
+			(at 41.91 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5786,17 +5874,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 66.04 115.316 0)
+		(property "Value" "GND"
+			(at 41.91 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 118.11 0)
+			(at 41.91 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5805,7 +5892,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 118.11 0)
+			(at 41.91 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5813,8 +5900,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 69.85 118.11 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5823,12 +5910,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e0ac6cb0-3e06-4e5b-9572-c70143385043")
+			(uuid "f85505e0-1c2c-4b40-bf53-97d9f1b9d2eb")
 		)
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR07")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5836,7 +5923,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 97.79 92.71 0)
+		(at 86.36 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5845,25 +5932,23 @@
 		(fields_autoplaced yes)
 		(uuid "6726622c-0277-4a22-8079-868c6c52cebc")
 		(property "Reference" "R11"
-			(at 100.33 91.4399 0)
+			(at 86.36 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "1K"
-			(at 100.33 93.9799 0)
+			(at 86.36 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 96.012 92.71 90)
+			(at 86.36 102.108 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5872,7 +5957,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 92.71 0)
+			(at 86.36 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5881,7 +5966,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 97.79 92.71 0)
+			(at 86.36 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5896,7 +5981,7 @@
 			(uuid "8f489e46-b1c4-4b34-81d1-dd56bbefa87f")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "R11")
 					(unit 1)
@@ -5966,7 +6051,7 @@
 			(uuid "24ea023a-4ffa-4b48-accd-be84ba06b59b")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "C2")
 					(unit 1)
@@ -6045,6 +6130,165 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4007")
+		(at 30.48 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fbf54de-7520-4d40-bb76-75862f3f3a23")
+		(property "Reference" "D2"
+			(at 30.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4007"
+			(at 30.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 30.48 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 30.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69411eab-3028-4b01-b9da-877bf57d2433")
+		)
+		(pin "1"
+			(uuid "bb506a27-3f55-4f47-8554-c257615613d8")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Converter_DCDC:OKI-78SR-3.3_1.5-W36-C")
+		(at 41.91 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70f2be91-252d-4ba5-8029-248fc2fe2486")
+		(property "Reference" "U3"
+			(at 41.91 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OKI-78SR-3.3_1.5-W36-C"
+			(at 41.91 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_Murata_OKI-78SR_Vertical"
+			(at 43.18 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://power.murata.com/data/power/oki-78sr.pdf"
+			(at 41.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1.5A Step-Down DC/DC-Regulator, 7-36V input, 3.3V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, OKI-78SR_Vertical"
+			(at 41.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9789bf36-7ca6-477c-bcbb-f9e5d8e785a9")
+		)
+		(pin "2"
+			(uuid "543af2a7-62ce-4348-b70a-f45160825b42")
+		)
+		(pin "1"
+			(uuid "98e492aa-fea6-4fc7-85bf-08c866d98f05")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 55.88 40.64 180)
 		(unit 1)
@@ -6106,7 +6350,7 @@
 			(uuid "446f9465-b164-408b-809b-5999b01a085a")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "R5")
 					(unit 1)
@@ -6115,16 +6359,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 69.85 113.03 90)
+		(lib_id "power:GND")
+		(at 101.6 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "761cd65d-f6db-4d9b-be8e-43ab4b899995")
-		(property "Reference" "#PWR05"
-			(at 73.66 113.03 0)
+		(fields_autoplaced yes)
+		(uuid "7475665f-e097-48f7-b43c-89cc55a79bf8")
+		(property "Reference" "#PWR017"
+			(at 101.6 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6132,17 +6377,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 66.04 110.236 0)
+		(property "Value" "GND"
+			(at 101.6 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 113.03 0)
+			(at 101.6 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6151,7 +6395,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 113.03 0)
+			(at 101.6 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9cbde58-11db-47c7-98f0-3f6eed36adba")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 49.53 111.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "754aafb7-7b76-4747-862a-e1bec11be8a3")
+		(property "Reference" "#PWR014"
+			(at 45.72 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 53.34 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6160,7 +6470,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 69.85 113.03 0)
+			(at 49.53 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ebe0c44-731f-4edc-a522-d2321117e57c")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 69.85 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "761cd65d-f6db-4d9b-be8e-43ab4b899995")
+		(property "Reference" "#PWR05"
+			(at 73.66 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 66.04 102.616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 69.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6172,7 +6548,7 @@
 			(uuid "7cb65566-01b7-4944-bc36-1cdc6285770f")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "#PWR05")
 					(unit 1)
@@ -6181,16 +6557,112 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:PN2222A")
+		(at 99.06 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7eaf944d-287e-4f49-a348-10771e6494d2")
+		(property "Reference" "Q2"
+			(at 104.14 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "PN2222A"
+			(at 104.14 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 104.14 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
+			(at 99.06 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
+			(at 99.06 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 99.06 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=E 2=B 3=C"
+			(at 99.06 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "fd367d8d-958e-493d-9f56-899b0f5f467d")
+		)
+		(pin "1"
+			(uuid "57e197f7-2d0a-4668-9704-992b2243a6ae")
+		)
+		(pin "2"
+			(uuid "92f6b576-b943-4d06-a65d-5146c3f04aa8")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
-		(at 86.36 137.16 180)
+		(at 104.14 120.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "81fd6dc0-f4c0-4e20-98ba-8246f46ede06")
-		(property "Reference" "#PWR010"
-			(at 86.36 133.35 0)
+		(property "Reference" "#PWR08"
+			(at 104.14 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6199,7 +6671,7 @@
 			)
 		)
 		(property "Value" "CLK"
-			(at 86.36 140.462 0)
+			(at 104.14 123.952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,7 +6680,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 137.16 0)
+			(at 104.14 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6217,7 +6689,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 137.16 0)
+			(at 104.14 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6698,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 86.36 137.16 0)
+			(at 104.14 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6240,7 +6712,7 @@
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR010")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -6318,15 +6790,15 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 83.82 137.16 180)
+		(at 93.98 120.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8a9adf6c-dc50-4adc-a89f-217807a9ede2")
-		(property "Reference" "#PWR09"
-			(at 83.82 133.35 0)
+		(property "Reference" "#PWR07"
+			(at 93.98 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6335,7 +6807,7 @@
 			)
 		)
 		(property "Value" "EN"
-			(at 83.82 140.462 0)
+			(at 93.98 123.952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6344,7 +6816,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 137.16 0)
+			(at 93.98 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6353,7 +6825,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 137.16 0)
+			(at 93.98 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6362,7 +6834,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 83.82 137.16 0)
+			(at 93.98 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6376,7 +6848,7 @@
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6510,7 +6982,7 @@
 			(uuid "44bd70e9-bc82-4894-ae62-baa94aaeaf5f")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "#PWR02")
 					(unit 1)
@@ -6519,17 +6991,58 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 109.22 115.57 90)
+		(lib_id "Transistor_BJT:PN2222A")
+		(at 119.38 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a0363da3-bd43-4cb7-bc03-52e02e6b08d4")
-		(property "Reference" "#PWR06"
-			(at 115.57 115.57 0)
+		(uuid "a5f8856f-84d8-4151-8969-6b471ef5179d")
+		(property "Reference" "Q4"
+			(at 124.46 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "PN2222A"
+			(at 124.46 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 124.46 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
+			(at 119.38 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
+			(at 119.38 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,17 +7050,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 113.03 115.5699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 115.57 0)
+		(property "Sim.Device" "NPN"
+			(at 119.38 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6555,8 +7059,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 109.22 115.57 0)
+		(property "Sim.Pins" "1=E 2=B 3=C"
+			(at 119.38 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6564,22 +7068,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 109.22 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "3b255963-570a-41ab-83b2-3c5d40a54722")
 		)
 		(pin "1"
-			(uuid "ace8939a-c3eb-4625-8810-f64a8299214a")
+			(uuid "4036ef34-5ff7-413f-8f81-df4556e876bf")
+		)
+		(pin "2"
+			(uuid "3f52285c-620b-4fb8-aa90-139a7665c07c")
 		)
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR06")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -6657,7 +7158,7 @@
 			(uuid "7130e1c1-21f7-47f8-8ad8-99daaaf75f7b")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "NE1")
 					(unit 1)
@@ -6667,7 +7168,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 86.36 133.35 0)
+		(at 104.14 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6676,7 +7177,7 @@
 		(fields_autoplaced yes)
 		(uuid "aae794e2-a940-4c80-a4f8-3c3d5c2595dc")
 		(property "Reference" "R15"
-			(at 88.9 132.0799 0)
+			(at 106.68 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6685,7 +7186,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 88.9 134.6199 0)
+			(at 106.68 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6694,7 +7195,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 84.582 133.35 90)
+			(at 102.362 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6703,7 +7204,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 133.35 0)
+			(at 104.14 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6712,7 +7213,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 86.36 133.35 0)
+			(at 104.14 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6870,6 +7371,102 @@
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:PN2222A")
+		(at 88.9 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6d6dafb-cc51-4911-bbad-4546086c9edc")
+		(property "Reference" "Q1"
+			(at 93.98 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "PN2222A"
+			(at 93.98 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 93.98 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
+			(at 88.9 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
+			(at 88.9 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 88.9 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=E 2=B 3=C"
+			(at 88.9 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "fce67be1-6d93-4bbf-a3b0-441a220d2387")
+		)
+		(pin "1"
+			(uuid "4feb76a8-e7a6-4c9e-9557-f011dafd11bd")
+		)
+		(pin "2"
+			(uuid "64aaa72d-1764-4dd0-8eaa-74279ffed299")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -7124,7 +7721,7 @@
 			(uuid "27172614-b1b8-49b0-96b3-f1e076f8a6de")
 		)
 		(instances
-			(project ""
+			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "NIX1")
 					(unit 1)
@@ -7134,7 +7731,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 111.76 87.63 0)
+		(at 86.36 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7143,25 +7740,23 @@
 		(fields_autoplaced yes)
 		(uuid "c88c4330-6586-4e4f-8476-be21fa9a47b3")
 		(property "Reference" "R9"
-			(at 114.3 86.3599 0)
+			(at 86.36 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "1K"
-			(at 114.3 88.8999 0)
+			(at 86.36 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 109.982 87.63 90)
+			(at 86.36 107.188 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7170,7 +7765,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 87.63 0)
+			(at 86.36 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7179,7 +7774,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 111.76 87.63 0)
+			(at 86.36 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7204,15 +7799,15 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 88.9 137.16 180)
+		(at 114.3 120.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d149c643-69f9-4e29-931b-07de22e89824")
-		(property "Reference" "#PWR011"
-			(at 88.9 133.35 0)
+		(property "Reference" "#PWR09"
+			(at 114.3 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7221,7 +7816,7 @@
 			)
 		)
 		(property "Value" "STR"
-			(at 88.9 140.462 0)
+			(at 114.3 123.952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7230,7 +7825,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 137.16 0)
+			(at 114.3 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7239,7 +7834,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 137.16 0)
+			(at 114.3 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7248,7 +7843,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 88.9 137.16 0)
+			(at 114.3 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7262,7 +7857,7 @@
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR011")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -7337,15 +7932,15 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 81.28 137.16 180)
+		(at 83.82 120.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e19daedb-5412-4dee-b3c4-c6538d900ce1")
-		(property "Reference" "#PWR08"
-			(at 81.28 133.35 0)
+		(property "Reference" "#PWR06"
+			(at 83.82 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7354,7 +7949,7 @@
 			)
 		)
 		(property "Value" "DIN"
-			(at 81.28 140.462 0)
+			(at 83.82 123.952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7363,7 +7958,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 137.16 0)
+			(at 83.82 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7372,7 +7967,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 137.16 0)
+			(at 83.82 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7381,7 +7976,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 81.28 137.16 0)
+			(at 83.82 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7395,23 +7990,24 @@
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR08")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 46.99 129.54 90)
+		(lib_id "power:GND")
+		(at 121.92 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ea63272f-8ea6-4090-8752-a74449a900d4")
-		(property "Reference" "#PWR014"
-			(at 50.8 129.54 0)
+		(fields_autoplaced yes)
+		(uuid "e2711056-36cc-4bb8-bdf7-d0f3311a49ab")
+		(property "Reference" "#PWR019"
+			(at 121.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7419,17 +8015,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 43.18 126.746 0)
+		(property "Value" "GND"
+			(at 121.92 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 129.54 0)
+			(at 121.92 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7438,7 +8033,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 129.54 0)
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a621d6d-a36c-4bf9-b7e8-6f3653569d20")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 26.67 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea63272f-8ea6-4090-8752-a74449a900d4")
+		(property "Reference" "#PWR010"
+			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 22.86 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7447,7 +8108,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 46.99 129.54 0)
+			(at 26.67 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7461,7 +8122,7 @@
 		(instances
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "#PWR014")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7535,7 +8196,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 88.9 133.35 0)
+		(at 114.3 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7544,7 +8205,7 @@
 		(fields_autoplaced yes)
 		(uuid "ef6edf6a-5a81-40c6-9a77-47a4bccb5341")
 		(property "Reference" "R16"
-			(at 91.44 132.0799 0)
+			(at 116.84 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7553,7 +8214,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 91.44 134.6199 0)
+			(at 116.84 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7562,7 +8223,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 87.122 133.35 90)
+			(at 112.522 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7571,7 +8232,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 133.35 0)
+			(at 114.3 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7580,7 +8241,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 88.9 133.35 0)
+			(at 114.3 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7605,7 +8266,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 104.14 91.44 0)
+		(at 86.36 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7614,25 +8275,23 @@
 		(fields_autoplaced yes)
 		(uuid "f3b7b715-98c6-4966-8596-270f07e447f9")
 		(property "Reference" "R10"
-			(at 106.68 90.1699 0)
+			(at 86.36 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "1K"
-			(at 106.68 92.7099 0)
+			(at 86.36 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 102.362 91.44 90)
+			(at 86.36 104.648 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7641,7 +8300,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 91.44 0)
+			(at 86.36 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7650,7 +8309,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 104.14 91.44 0)
+			(at 86.36 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7668,6 +8327,145 @@
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f733885c-8a8e-40ed-a399-2a501a37547c")
+		(property "Reference" "#PWR018"
+			(at 111.76 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a8bb2bd-925b-462b-a2f8-9b7bf82ab975")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Converter_DCDC:OKI-78SR-3.3_1.5-W36-C")
+		(at 41.91 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffcb6bc4-2e86-4d77-bba6-e27fcd254000")
+		(property "Reference" "U4"
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OKI-78SR-3.3_1.5-W36-C"
+			(at 41.91 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_Murata_OKI-78SR_Vertical"
+			(at 43.18 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://power.murata.com/data/power/oki-78sr.pdf"
+			(at 41.91 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1.5A Step-Down DC/DC-Regulator, 7-36V input, 3.3V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, OKI-78SR_Vertical"
+			(at 41.91 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "183a1272-3209-490f-ab43-23f3b7c1ddee")
+		)
+		(pin "2"
+			(uuid "658c2c41-47ed-4485-86dc-fc9fc2714212")
+		)
+		(pin "1"
+			(uuid "9f00615a-9d80-4f88-b348-f695b14fe246")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "U4")
 					(unit 1)
 				)
 			)
