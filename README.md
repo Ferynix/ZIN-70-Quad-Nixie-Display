@@ -26,6 +26,7 @@ Tubes:
 
 Passives:
 * 4x 6.8kR 1206(in) SMD Current-Limiting Power Resistors (Nixie Tubes)
+    - (or 5K if you wish to run at a bit higher current)
 * 8x 1kR 1206(in) SMD Current-Limiting Signal Resistors (Outputs)
 * 4x 200kR 1206(in) SMD Current-Limiting Power Resistors (Indicator Swapper)
 * 2x 100nF 1206(in) SMD Decoupling Capacitors
