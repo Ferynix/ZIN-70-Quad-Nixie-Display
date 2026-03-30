@@ -1728,6 +1728,7 @@
 			(on_board yes)
 			(property "Reference" "NIX"
 				(at 0 0 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2237,6 +2238,326 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ZIN-70_Z5680M_Pinout_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "NIX1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "ZIN-70"
+				(at 0 0 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "NixFootprints:ZIN-70 Z5680M Pinout"
+				(at 0 0 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Anode" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cathode" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ZIN-70_Z5680M_Pinout_1_0_1"
+				(arc
+					(start -12.7 -3.81)
+					(mid -16.51 0)
+					(end -12.7 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -12.7 -3.81) (xy 12.7 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 3.81) (xy -12.7 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 12.7 3.81)
+					(mid 16.51 0)
+					(end 12.7 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ZIN-70_Z5680M_Pinout_1_1_1"
+				(pin passive line
+					(at -11.43 -6.35 90)
+					(length 2.54)
+					(name "0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -6.35 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -6.35 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -6.35 90)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 -6.35 90)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "~{A}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -6.35 90)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -6.35 90)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -6.35 90)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 -6.35 90)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 -6.35 90)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4361,122 +4682,6 @@
 		)
 	)
 	(symbol
-		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
-		(at 152.4 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d7b1171-5dbc-46f0-bcdb-6bf8e3c9cf8d")
-		(property "Reference" "NIX4"
-			(at 152.4 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ZIN-70"
-			(at 152.4 29.21 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Footprint" "NixFootprints:ZIN-70 Z5680M Pinout"
-			(at 152.4 29.21 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 152.4 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Anode" ""
-			(at 152.4 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cathode" ""
-			(at 152.4 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "f4681808-1822-4782-b5be-7eae57503966")
-		)
-		(pin "3"
-			(uuid "a935129e-fd44-4b2a-8c3d-dd385a5feb8b")
-		)
-		(pin "7"
-			(uuid "e215077d-3dca-40b0-8aff-5afdb6a840dd")
-		)
-		(pin "13"
-			(uuid "7e313712-df98-49a9-a11f-8fe68e88674e")
-		)
-		(pin "12"
-			(uuid "a8ad2dc8-6256-4eb4-8ba5-c5661674cd70")
-		)
-		(pin "16"
-			(uuid "f6731356-73d4-4708-93f0-05fbebde5e89")
-		)
-		(pin "2"
-			(uuid "1357ee11-4f41-48c4-af78-22663e3082fa")
-		)
-		(pin "8"
-			(uuid "0af6433f-06c9-470b-9b8e-4b88376233cb")
-		)
-		(pin "17"
-			(uuid "b8c4d39f-cf2f-49b0-bc29-c3b0f700310b")
-		)
-		(pin "14"
-			(uuid "209113d6-3116-4fea-b662-85cacef8f1f1")
-		)
-		(pin "9"
-			(uuid "c234cddb-315e-4d0b-aa22-fba4cce51a80")
-		)
-		(instances
-			(project "ZIN70 Nixie Clock"
-				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "NIX4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 93.98 116.84 0)
 		(unit 1)
@@ -4673,122 +4878,6 @@
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
-		(at 76.2 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d5837cd-29d2-4fa3-b045-08ca69189dee")
-		(property "Reference" "NIX2"
-			(at 76.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ZIN-70"
-			(at 76.2 29.21 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Footprint" "NixFootprints:ZIN-70 Z5680M Pinout"
-			(at 76.2 29.21 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Anode" ""
-			(at 76.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cathode" ""
-			(at 76.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "ba19b4ec-207b-40da-a62d-234d43499509")
-		)
-		(pin "3"
-			(uuid "cc9511d5-8cf9-47af-a6e7-974c1519827d")
-		)
-		(pin "7"
-			(uuid "0567b021-1580-4e05-a388-b05a87988c27")
-		)
-		(pin "13"
-			(uuid "6cefe914-8acf-4f56-b963-f9dc0de67e09")
-		)
-		(pin "12"
-			(uuid "148a145c-884d-4c7a-b8ea-ed84a4851a4a")
-		)
-		(pin "16"
-			(uuid "eecfca63-8dad-4447-b8e9-e912e434bffb")
-		)
-		(pin "2"
-			(uuid "97af5e9c-9fe9-4409-b8cf-a14ba46fe410")
-		)
-		(pin "8"
-			(uuid "b3ef421b-77d2-475b-875c-9378086b7d69")
-		)
-		(pin "17"
-			(uuid "287bb3b4-378f-4e54-a246-405e56294f80")
-		)
-		(pin "14"
-			(uuid "76fe0de6-5c2b-4286-9fbf-b986c682deb6")
-		)
-		(pin "9"
-			(uuid "54698540-4387-4053-9378-3af339610fe7")
-		)
-		(instances
-			(project "ZIN70 Nixie Clock"
-				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "NIX2")
 					(unit 1)
 				)
 			)
@@ -5536,122 +5625,6 @@
 		)
 	)
 	(symbol
-		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
-		(at 118.11 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36d4d6c0-17c9-4a50-909d-43eec06229d9")
-		(property "Reference" "NIX3"
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ZIN-70"
-			(at 118.11 29.21 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Footprint" "NixFootprints:ZIN-70 Z5680M Pinout"
-			(at 118.11 29.21 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Anode" ""
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cathode" ""
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "97eb100b-cf51-402b-85ec-7f4c2e822c43")
-		)
-		(pin "3"
-			(uuid "4cd89457-05a9-44dc-978e-faedd87e3f0d")
-		)
-		(pin "7"
-			(uuid "cafa0f4f-8191-4bfb-9788-9ac3e956f640")
-		)
-		(pin "13"
-			(uuid "aa949776-9347-47af-81ef-019a899eb98e")
-		)
-		(pin "12"
-			(uuid "3882ae94-695e-4a91-84f6-c794ac90e0fb")
-		)
-		(pin "16"
-			(uuid "375dce7b-3a89-4cf2-8b71-66bb3b920bd6")
-		)
-		(pin "2"
-			(uuid "a8672b6f-436f-498e-9b98-bb9fc2a96328")
-		)
-		(pin "8"
-			(uuid "671c0fd7-abe6-4371-97a9-bfefebffaa4d")
-		)
-		(pin "17"
-			(uuid "cd4afbd0-6d00-45c8-9e79-ac132ba7e534")
-		)
-		(pin "14"
-			(uuid "aa5d8a70-c5a1-46cf-b409-6e48f185efac")
-		)
-		(pin "9"
-			(uuid "2ef57dbb-0a09-4af1-b737-76ac6cc9453d")
-		)
-		(instances
-			(project "ZIN70 Nixie Clock"
-				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
-					(reference "NIX3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 41.91 97.79 0)
 		(unit 1)
@@ -5850,6 +5823,105 @@
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
+		(at 152.4 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54ec635c-ff12-4d1f-b52b-b1c07bbba902")
+		(property "Reference" "NIX4"
+			(at 152.4 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ZIN-70"
+			(at 152.4 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NixFootprints:ZIN-70 Z5680M Pinout"
+			(at 152.4 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "5a02db8d-9009-4391-83d4-989cdfa04877")
+		)
+		(pin "16"
+			(uuid "d4c186e4-047f-4f4d-a3ab-9520186c1f15")
+		)
+		(pin "13"
+			(uuid "d92f7fd4-4ad0-472d-b844-6a4bbb36b82b")
+		)
+		(pin "3"
+			(uuid "59c8c353-ec06-4da9-8f1e-12e0ecdc1c51")
+		)
+		(pin "7"
+			(uuid "9d8c263c-11b5-4d81-aaa1-b726b9e1ed51")
+		)
+		(pin "9"
+			(uuid "c209fc90-fc86-4335-9fde-1dca3ad30bce")
+		)
+		(pin "4"
+			(uuid "7935ca1d-6ca9-4240-a700-0884b38569c9")
+		)
+		(pin "17"
+			(uuid "65077936-51ea-402a-b4a0-2acf26bb1529")
+		)
+		(pin "8"
+			(uuid "c4043766-9722-4e0e-9b9f-8d215283c319")
+		)
+		(pin "2"
+			(uuid "8ad4e278-9e8a-4271-996e-79cb713da785")
+		)
+		(pin "14"
+			(uuid "e08c91e2-6510-44a0-b72d-8a26a37f03e8")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "NIX4")
 					(unit 1)
 				)
 			)
@@ -6647,6 +6719,105 @@
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
+		(at 118.11 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f62006f-2ad8-434c-a667-c6cf01050eb2")
+		(property "Reference" "NIX3"
+			(at 118.11 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ZIN-70"
+			(at 118.11 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NixFootprints:ZIN-70 Z5680M Pinout"
+			(at 118.11 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "edc59c6a-2867-4092-978c-7c46961f4ed6")
+		)
+		(pin "16"
+			(uuid "7b225cf8-22ef-42d9-a54c-f3c4e23172fc")
+		)
+		(pin "13"
+			(uuid "9cb81d2f-78fa-4695-9c2c-16dedef2aa26")
+		)
+		(pin "3"
+			(uuid "3a3f8397-6679-4f5a-8732-3358d6adc0e9")
+		)
+		(pin "7"
+			(uuid "91d21f0b-9844-46f8-8553-db648f763d43")
+		)
+		(pin "9"
+			(uuid "a67b283d-50ed-4a05-8e40-ce4ac0c17ffa")
+		)
+		(pin "4"
+			(uuid "36b0789d-3e62-46fb-bf42-cb8e302132d1")
+		)
+		(pin "17"
+			(uuid "1e9658d3-246f-46c2-af1d-72b2fbb1982e")
+		)
+		(pin "8"
+			(uuid "f7a1317e-4bfc-4d32-abbc-425f8f3661a4")
+		)
+		(pin "2"
+			(uuid "3c4ca6b1-9054-41da-82b1-603fba48d329")
+		)
+		(pin "14"
+			(uuid "bd41c6f0-e61d-4647-b269-9be2a8b927d9")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "NIX3")
 					(unit 1)
 				)
 			)
@@ -7614,6 +7785,7 @@
 		)
 	)
 	(symbol
+		(lib_name "ZIN-70_Z5680M_Pinout_1")
 		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
 		(at 41.91 29.21 0)
 		(unit 1)
@@ -7637,7 +7809,7 @@
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7858,6 +8030,105 @@
 			(project "ZIN70 Nixie Clock"
 				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "NixSymbols:ZIN-70_Z5680M_Pinout")
+		(at 76.2 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9b6ad33-b1d5-4c8f-ab9f-226ff9fd19af")
+		(property "Reference" "NIX2"
+			(at 76.2 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ZIN-70"
+			(at 76.2 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NixFootprints:ZIN-70 Z5680M Pinout"
+			(at 76.2 29.21 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "a3b5503b-a418-46b7-84db-706f002e0105")
+		)
+		(pin "16"
+			(uuid "df45985c-a50e-4738-8b53-a1060c92ebcf")
+		)
+		(pin "13"
+			(uuid "8d50d6e4-79e5-4b5e-8ad3-7bf4c0ffd23d")
+		)
+		(pin "3"
+			(uuid "dda2e2be-2365-4406-9e47-ac6f5d1f616a")
+		)
+		(pin "7"
+			(uuid "0e5238a2-9c92-4fff-8929-2d215fd68ab7")
+		)
+		(pin "9"
+			(uuid "a6e5d5d6-c0dc-456d-b740-125b5f43f6ce")
+		)
+		(pin "4"
+			(uuid "75f656af-96e6-4307-9e3b-23a7522df703")
+		)
+		(pin "17"
+			(uuid "cbf65a56-1051-44fc-a8e7-10b79dbbabbf")
+		)
+		(pin "8"
+			(uuid "9072dd51-9f2b-4cc6-8e69-461c1be1d8b4")
+		)
+		(pin "2"
+			(uuid "02dd91b3-70b2-42aa-b8e7-468c09fd1f0c")
+		)
+		(pin "14"
+			(uuid "bb5c9503-538d-4c18-873b-aaf741b1acbc")
+		)
+		(instances
+			(project "ZIN70 Nixie Clock"
+				(path "/a8c78934-23a1-4cf6-b942-8d1ef6ada9e8"
+					(reference "NIX2")
 					(unit 1)
 				)
 			)
